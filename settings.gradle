@@ -1,0 +1,8 @@
+include 'base-quest'
+include 'tomcat-quest'
+include 'durid-quest'
+
+
+rootProject.name = 'java-quest'
+include 'duird-quest'
+
