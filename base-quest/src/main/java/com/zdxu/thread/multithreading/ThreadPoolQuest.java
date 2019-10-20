@@ -2,7 +2,7 @@
  * 
  */
 
-package com.zdxu.multithreading.threadPoolExecutor;
+package com.zdxu.thread.multithreading;
 
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;

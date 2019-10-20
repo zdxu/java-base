@@ -1,8 +1,6 @@
 
-package com.zdxu.multithreading.threadPoolExecutor.examples;
+package com.zdxu.thread.multithreading.examples;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
 import java.util.concurrent.*;
 
 class AboutExecutors {

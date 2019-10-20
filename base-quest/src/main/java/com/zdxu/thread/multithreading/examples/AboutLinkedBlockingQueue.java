@@ -1,4 +1,4 @@
-package com.zdxu.multithreading.threadPoolExecutor.examples;
+package com.zdxu.thread.multithreading.examples;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
