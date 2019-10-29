@@ -11,6 +11,8 @@ public class AboutThreadInterrupt {
 
     public static void main(String[] args) {
         threadInterrupt();
+
+        runningThreadInterrupt();
     }
 
     /**
@@ -33,5 +35,15 @@ public class AboutThreadInterrupt {
         thread.interrupt();
 
         System.out.println("thread interrupt status: " + thread.isInterrupted());
+    }
+
+
+    private static void runningThreadInterrupt() {
+        Thread thread = new Thread(() -> {
+            Thread.currentThread().interrupt();
+            System.out.println(" inerrupt end ...");
+        });
+        thread.start();
+        ThreadUtil.sleep(1000 * 10);
     }
 }
