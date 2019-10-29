@@ -1,6 +1,7 @@
 include 'base-quest'
 include 'tomcat-quest'
 include 'durid-quest'
+include 'spring-quest'
 
 
 rootProject.name = 'java-quest'
