@@ -1,5 +1,5 @@
 
-package com.zdxu.thread.multithreading.examples;
+package com.zdxu.thread.multithreading;
 
 import java.util.concurrent.*;
 
@@ -10,7 +10,6 @@ class AboutExecutors {
 
         System.out.println(System.getSecurityManager());
 
-        // 
         int nThreads = 5;
 
         ThreadFactory threadFactory = Executors.defaultThreadFactory();

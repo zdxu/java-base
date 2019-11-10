@@ -4,8 +4,7 @@
 
 package com.zdxu.thread.multithreading;
 
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
+import java.util.concurrent.*;
 import java.util.concurrent.atomic.AtomicInteger;
 
 class ThreadPoolQuest {
@@ -36,28 +35,24 @@ class ThreadPoolQuest {
         System.out.println(obj.intValue());
 
 
-        
-
-
         System.out.println((-1)<<(Integer.SIZE-3));
         System.out.println(1 << 29);
 
         System.out.println(3<<1);
 
 
-
         System.out.println(~(-1));
 
         ExecutorService executorService = Executors.newCachedThreadPool();
         
-        // ThreadPoolExecutor ThreadPoolExecutor = new ThreadPoolExecutor(
-        //     4, 2, 10, TimeUnit.DAYS, 
-        //     new SynchronousQueue<Runnable>(),
-        //     Executors.defaultThreadFactory(),
-        //     new ThreadPoolExecutor.AbortPolicy()
-        // );
+        ThreadPoolExecutor ThreadPoolExecutor = new ThreadPoolExecutor(
+             4, 2, 10, TimeUnit.DAYS,
+             new SynchronousQueue<Runnable>(),
+             Executors.defaultThreadFactory(),
+             new ThreadPoolExecutor.AbortPolicy()
+        );
 
-            System.out.println("end ...");
+        System.out.println("end ...");
         
     }
 
