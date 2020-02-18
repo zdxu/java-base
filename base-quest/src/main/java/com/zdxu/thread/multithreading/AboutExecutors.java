@@ -8,41 +8,27 @@ class AboutExecutors {
     public static void main(String[] args) {
 
 
-        System.out.println(System.getSecurityManager());
-
         int nThreads = 5;
-
         ThreadFactory threadFactory = Executors.defaultThreadFactory();
-        Executors.newFixedThreadPool(nThreads);
-        Executors.newFixedThreadPool(nThreads, threadFactory);
-
-        Thread thread = threadFactory.newThread(() -> {
-            System.out.println(" ... ");
-            try {
-                Thread.sleep(100000000);
-            }catch (Exception e) {
-
-            }
-        });
-
-        thread.start();
 
 
-        thread.stop();
 
-        int i = 10;
+        /**
+         * fixed thread pool
+         * 相当于 ThreadPoolExecutor(nThreads, nThreads,
+         * 0L, TimeUnit.MILLISECONDS, new LinkedBlockingQueue<Runnable>(),
+         * threadFactory, new ThreadPoolExecutor.AbortPolicy())
+         *
+         *
+         */
+        ExecutorService executorService = Executors.newFixedThreadPool(nThreads);
+        executorService = Executors.newFixedThreadPool(nThreads, threadFactory);
 
-        jjj:
 
 
-            for (; i > 0;) {
-                System.out.println(i);
 
-                i--;
 
-        }
 
-        System.out.println("end ...");
 
 
 

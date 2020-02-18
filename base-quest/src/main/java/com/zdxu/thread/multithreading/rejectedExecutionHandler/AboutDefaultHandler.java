@@ -12,7 +12,7 @@ public class AboutDefaultHandler {
     public static void main(String[] args) {
 
         /**
-         *
+         * 默认的 reject execute handler
          */
         RejectedExecutionHandler defaultHandler = new ThreadPoolExecutor.AbortPolicy();
 
